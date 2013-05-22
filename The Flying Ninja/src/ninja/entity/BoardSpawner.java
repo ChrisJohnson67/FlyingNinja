@@ -19,8 +19,8 @@ public class BoardSpawner implements IConstants {
 
     public BoardSpawner() {
         enemies = new ArrayList<Enemy>();
-        minSpawnTime = 3;
-        maxSpawnTime = 7;
+        minSpawnTime = 1;
+        maxSpawnTime = 4;
     }
 
     public ArrayList<Enemy> getEnemies() {

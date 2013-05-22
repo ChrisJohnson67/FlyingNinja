@@ -2,7 +2,7 @@ package ninja.entity.enemy;
 
 import java.util.Random;
 
-import ninja.compenent.ImageRenderComponent;
+import ninja.component.ImageRenderComponent;
 import ninja.entity.Entity;
 import ninja.game.IConstants;
 

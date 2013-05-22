@@ -2,7 +2,7 @@ package ninja.entity.enemy;
 
 import java.util.Random;
 
-import ninja.compenent.ImageRenderComponent;
+import ninja.component.ImageRenderComponent;
 import ninja.entity.Entity;
 import ninja.game.IConstants;
 
@@ -22,7 +22,7 @@ public class Board extends Enemy implements IConstants {
 
     public Entity init(){
         
-        setVelocity(new Vector2f(-0.3f,0f));
+        setVelocity(new Vector2f(-0.6f,0f));
         
         try {
             AddComponent( new ImageRenderComponent("BoardRender", new Image("assets/board.png")) );

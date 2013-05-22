@@ -1,6 +1,6 @@
 package ninja.entity.weapon;
 
-import ninja.compenent.ImageRenderComponent;
+import ninja.component.ImageRenderComponent;
 import ninja.entity.Entity;
 import ninja.game.IConstants;
 

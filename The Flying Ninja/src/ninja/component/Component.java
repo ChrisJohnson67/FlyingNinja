@@ -1,4 +1,4 @@
-package ninja.compenent;
+package ninja.component;
 
 import ninja.entity.Entity;
 

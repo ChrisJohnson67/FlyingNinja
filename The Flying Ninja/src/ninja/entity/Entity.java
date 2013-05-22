@@ -2,8 +2,8 @@ package ninja.entity;
 
 import java.util.ArrayList;
 
-import ninja.compenent.Component;
-import ninja.compenent.RenderComponent;
+import ninja.component.Component;
+import ninja.component.RenderComponent;
 import ninja.game.IConstants;
 
 import org.newdawn.slick.GameContainer;
@@ -24,7 +24,16 @@ public abstract class Entity implements IConstants{
 
     RenderComponent renderComponent = null;
 
-    ArrayList<Component> components = null;
+    public RenderComponent getRenderComponent() {
+		return renderComponent;
+	}
+
+	public void setRenderComponent(RenderComponent renderComponent) {
+		this.renderComponent = renderComponent;
+	}
+
+
+	ArrayList<Component> components = null;
 
     public Entity(String id, Polygon p) {
         this.id = id;
@@ -117,7 +126,12 @@ public abstract class Entity implements IConstants{
     }
 
 
-    public void render(GameContainer gc, StateBasedGame sb, Graphics gr) {
+    public void renderSkill(GameContainer gc, StateBasedGame sb, Graphics gr, boolean cd) throws SlickException {
+    	renderComponent.renderSkill(gc, sb, gr, cd);
+    }
+    
+    public void render(GameContainer gc, StateBasedGame sb, Graphics gr) throws SlickException {
+    	
         if (renderComponent != null)
             renderComponent.render(gc, sb, gr);
     }

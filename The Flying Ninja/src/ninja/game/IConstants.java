@@ -20,7 +20,13 @@ public interface IConstants {
     static public int GUI_HEIGHT=105;
     static public int SKILL_HEIGHT=60;
     static public int SKILL_WIDTH=60;
+    static public int BEAM_HEIGHT=79;
+    static public int BEAM_WIDTH=1280;
     static public int BOTTOM_GUI_HEIGHT=64;
+    static public double Q_COOLDOWN=500;
+    static public double W_COOLDOWN=10000;
+    static public double E_COOLDOWN=20000;
+    static public double R_COOLDOWN=30000;
     
     static Polygon PLAYER_SHAPE = new Polygon(new float[]{
             0,0,
@@ -54,5 +60,12 @@ public interface IConstants {
             SKILL_WIDTH,0,
             SKILL_WIDTH,SKILL_HEIGHT,
             0,SKILL_HEIGHT
+    });
+    
+    static Polygon BEAM_SHAPE= new Polygon(new float[]{
+            0,0,
+            BEAM_WIDTH,0,
+            BEAM_WIDTH,BEAM_HEIGHT,
+            0,BEAM_HEIGHT
     });
 }

@@ -18,8 +18,8 @@ public class BirdSpawner implements IConstants {
 
     public BirdSpawner() {
         enemies = new ArrayList<Enemy>();
-        minSpawnTime = 5;
-        maxSpawnTime = 10;
+        minSpawnTime = 3;
+        maxSpawnTime = 7;
     }
 
     public ArrayList<Enemy> getEnemies() {

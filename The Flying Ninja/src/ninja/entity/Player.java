@@ -1,8 +1,8 @@
 package ninja.entity;
 
-import ninja.compenent.Component;
-import ninja.compenent.ImageRenderComponent;
-import ninja.compenent.TopDownMovement;
+import ninja.component.Component;
+import ninja.component.ImageRenderComponent;
+import ninja.component.TopDownMovement;
 import ninja.game.IConstants;
 
 import org.newdawn.slick.GameContainer;
@@ -39,8 +39,6 @@ public class Player extends Entity implements IConstants {
         position.y = Math.min(Math.max(position.y + velocity.y*delta, GUI_HEIGHT),
                 SCREEN_HEIGHT - PLAYER_HEIGHT * 2);
         setPosition(position);
-        /*shape.setX(shape.getX() + velocity.x*delta);
-        shape.setY(shape.getY() + velocity.y*delta);*/
     }
 
     @Override

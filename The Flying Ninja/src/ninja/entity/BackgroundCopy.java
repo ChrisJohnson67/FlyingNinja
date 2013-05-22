@@ -1,6 +1,6 @@
 package ninja.entity;
 
-import ninja.compenent.ImageRenderComponent;
+import ninja.component.ImageRenderComponent;
 import ninja.game.IConstants;
 
 import org.newdawn.slick.GameContainer;

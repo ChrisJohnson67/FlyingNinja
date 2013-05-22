@@ -1,4 +1,4 @@
-package ninja.compenent;
+package ninja.component;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Input;
